@@ -5,5 +5,5 @@ const chatRouter = express.Router();
 
 // Get all chat messages
 chatRouter.get('/', chatController.getAllChats);
-
+chatRouter.get("/room/:room",chatController.getMessagesByRoom)
 export default chatRouter;

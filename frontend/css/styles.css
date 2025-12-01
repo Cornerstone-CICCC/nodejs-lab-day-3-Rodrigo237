@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, sans-serif;
+  background: #f4f6f9;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+.container {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 2rem;
+  width: 100%;
+  max-width: 600px;
+}
+
+.room-btn, #leaveRoomBtn {
+  background: #3498db;
+  border: none;
+  color: #fff;
+  padding: 0.6rem 1rem;
+  margin: 0.3rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.room-btn:hover, #leaveRoomBtn:hover {
+  background: #2980b9;
+}
+
+.room-btn.active {
+  background: #2ecc71;
+}
+
+#currentRoomName {
+  font-weight: bold;
+  color: #e67e22;
+}
+
+#messagesList {
+  list-style: none;
+  margin: 1rem 0;
+  padding: 0;
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: #fafafa;
+}
+
+#messagesList li {
+  padding: 0.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+#messagesList li:last-child {
+  border-bottom: none;
+}
+
+.system-message {
+  text-align: center;
+  font-style: italic;
+  color: #888;
+  background: #f0f0f0;
+}
+
+#chatForm {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+#chatForm input {
+  flex: 1;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#chatForm button {
+  background: #27ae60;
+  border: none;
+  color: #fff;
+  padding: 0.6rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+#chatForm button:hover {
+  background: #1e8449;
+}
+
+.message-username {
+  font-weight: bold;
+  color: #2c3e50;
+  margin-right: 0.3rem;
+}
+
+.message-text {
+  color: #34495e;
+}
+
+.message-time {
+  float: right;
+  font-size: 0.8rem;
+  color: #aaa;
+}
